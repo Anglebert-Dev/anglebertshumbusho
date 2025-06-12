@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import Image from 'next/image';
 
 interface Project {
   id: string;
@@ -114,7 +113,6 @@ const categoryLabels = {
 };
 
 export default function ProjectsSection() {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
   const filteredProjects = activeCategory
