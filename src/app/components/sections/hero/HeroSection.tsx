@@ -6,6 +6,14 @@ import GeometricShapes from '@/app/components/3d/geometric-shapes/GeometricShape
 import TypewriterEffect from '@/app/components/ui/typewriter/TypewriterEffect';
 
 export default function HeroSection() {
+  const scrollToProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary">
       {/* Background Elements */}
@@ -45,9 +53,10 @@ export default function HeroSection() {
           <div className="flex gap-4 justify-center mt-8">
             <motion.a
               href="#projects"
+              onClick={scrollToProjects}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 bg-secondary text-primary font-semibold rounded-lg hover:bg-secondary-light transition-colors"
+              className="px-6 py-3 bg-secondary text-primary font-semibold rounded-lg hover:bg-secondary-light transition-all duration-300 ease-in-out"
             >
               Explore My Work
             </motion.a>
@@ -55,7 +64,7 @@ export default function HeroSection() {
               href="/resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 border-2 border-secondary text-secondary font-semibold rounded-lg hover:bg-secondary/10 transition-colors"
+              className="px-6 py-3 border-2 border-secondary text-secondary font-semibold rounded-lg hover:bg-secondary/10 transition-all duration-300 ease-in-out"
             >
               Download Resume
             </motion.a>
