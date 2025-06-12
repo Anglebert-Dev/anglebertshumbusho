@@ -98,10 +98,10 @@ export default function ContactSection() {
           className="text-center mb-12 md:mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-light mb-4">
-            Let's Build Something Amazing
+            Let&apos;s Build Something Amazing
           </h2>
           <p className="text-lg md:text-xl text-neutral-light/80 max-w-2xl mx-auto">
-            Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
+            Have a project in mind? Let&apos;s discuss how we can work together to bring your ideas to life.
           </p>
         </motion.div>
 
@@ -218,7 +218,7 @@ export default function ContactSection() {
                     exit={{ opacity: 0, y: -10 }}
                     className="text-emerald-400 text-center"
                   >
-                    Message sent successfully! I'll get back to you soon.
+                    Message sent successfully! I&apos;ll get back to you soon.
                   </motion.div>
                 )}
               </form>
@@ -247,7 +247,7 @@ export default function ContactSection() {
                 </span>
                 {showAvailabilityTooltip && (
                   <span className="absolute left-1/2 -translate-x-1/2 mt-2 px-4 py-2 bg-primary text-neutral-light text-xs rounded-lg shadow-lg z-20 whitespace-nowrap animate-fade-in">
-                    I'm currently accepting new collaborations! Let's connect.
+                    I&apos;m currently accepting new collaborations! Let&apos;s connect.
                   </span>
                 )}
               </div>

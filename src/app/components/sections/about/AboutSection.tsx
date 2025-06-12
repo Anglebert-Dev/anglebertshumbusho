@@ -47,7 +47,7 @@ const timelineEvents: TimelineEvent[] = [
   {
     year: '2024-2027',
     title: 'African Leadership University',
-    description: 'Bachelor\'s in Software Engineering - Kigali, Rwanda',
+    description: "Bachelor's in Software Engineering - Kigali, Rwanda",
     type: 'education'
   },
   {
