@@ -96,8 +96,6 @@ const experiences: Experience[] = [
 ];
 
 export default function ExperienceSection() {
-  const [activeTab, setActiveTab] = useState('work');
-
   return (
     <section id="experience" className="relative min-h-screen py-12 md:py-20 bg-primary">
       {/* Background Elements */}

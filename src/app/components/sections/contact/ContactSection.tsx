@@ -75,7 +75,8 @@ export default function ContactSection() {
 
   const onSubmit = async (formData: ContactFormData) => {
     setIsSubmitting(true);
-    // Simulate API call
+    // Simulate API call with form data
+    console.log('Submitting form data:', formData);
     await new Promise((resolve) => setTimeout(resolve, 1500));
     setShowSuccess(true);
     reset();
