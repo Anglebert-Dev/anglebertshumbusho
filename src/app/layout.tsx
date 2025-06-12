@@ -22,6 +22,9 @@ export default function RootLayout({
         <MainLayout>
         {children}
         </MainLayout>
+        <footer className="w-full text-center py-4 text-sm text-neutral-light/60 bg-primary border-t border-secondary/10 mt-12">
+          © 2025 Anglebert Shumbusho Ishimwe. All rights reserved.
+        </footer>
       </body>
     </html>
   );
