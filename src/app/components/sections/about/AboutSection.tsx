@@ -77,26 +77,26 @@ const interests = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="min-h-screen py-20 bg-primary-dark">
+    <section id="about" className="min-h-screen py-12 md:py-20 bg-primary-dark">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold text-center mb-12"
+          className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12"
         >
           The Developer Behind the Code
         </motion.h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12">
           {/* Left Panel - Technical Persona */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="space-y-6 md:space-y-8"
           >
-            <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden shadow-lg">
+            <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden shadow-lg">
               <Image
                 src="/assets/images/_DSC6196[1].jpg"
                 alt="Professional Photo"
@@ -105,13 +105,13 @@ export default function AboutSection() {
               />
             </div>
 
-            <div className="bg-primary/20 p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold mb-4">Technical Skills</h3>
+            <div className="bg-primary/20 p-4 md:p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl md:text-2xl font-semibold mb-4">Technical Skills</h3>
               <SkillBars skills={skills} />
             </div>
 
-            <div className="bg-primary/20 p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold mb-4">Professional Journey</h3>
+            <div className="bg-primary/20 p-4 md:p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl md:text-2xl font-semibold mb-4">Professional Journey</h3>
               <Timeline events={timelineEvents} />
             </div>
           </motion.div>
@@ -121,11 +121,11 @@ export default function AboutSection() {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="space-y-6 md:space-y-8"
           >
-            <div className="bg-primary/20 p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold mb-4">Development Philosophy</h3>
-              <p className="text-neutral-light leading-relaxed">
+            <div className="bg-primary/20 p-4 md:p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl md:text-2xl font-semibold mb-4">Development Philosophy</h3>
+              <p className="text-sm md:text-base text-neutral-light leading-relaxed">
                 I am passionate about building software that not only solves problems but also creates meaningful
                 experiences. My approach combines technical excellence with a deep understanding of
                 user needs, ensuring that every line of code serves a purpose. I specialize in financial systems,
@@ -134,24 +134,24 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <div className="bg-primary/20 p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold mb-4">Interests & Hobbies</h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="bg-primary/20 p-4 md:p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl md:text-2xl font-semibold mb-4">Interests & Hobbies</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4">
                 {interests.map((interest, index) => (
                   <motion.div
                     key={index}
                     whileHover={{ scale: 1.05 }}
-                    className="flex items-center gap-2 p-4 bg-primary/10 rounded-lg"
+                    className="flex items-center gap-2 p-3 md:p-4 bg-primary/10 rounded-lg"
                   >
-                    <span className="text-2xl">{interest.icon}</span>
-                    <span className="font-medium">{interest.name}</span>
+                    <span className="text-xl md:text-2xl">{interest.icon}</span>
+                    <span className="text-sm md:text-base font-medium">{interest.name}</span>
                   </motion.div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-primary/20 p-6 rounded-lg shadow-lg h-[400px]">
-              <h3 className="text-2xl font-semibold mb-4">Day in My Life</h3>
+            <div className="bg-primary/20 p-4 md:p-6 rounded-lg shadow-lg h-[300px] md:h-[400px]">
+              <h3 className="text-xl md:text-2xl font-semibold mb-4">Day in My Life</h3>
               <DayInLife />
             </div>
           </motion.div>

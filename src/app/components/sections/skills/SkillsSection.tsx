@@ -15,6 +15,13 @@ interface Technology {
 const technologies: Technology[] = [
   // Backend Mastery
   {
+    name: 'Node.js',
+    category: 'backend',
+    proficiency: 92,
+    projects: ['RINDA', 'Kiac Education Platform'],
+    icon: '🟢'
+  },
+  {
     name: 'Laravel',
     category: 'backend',
     proficiency: 95,
@@ -27,13 +34,6 @@ const technologies: Technology[] = [
     proficiency: 90,
     projects: ['COSEKE Banking Systems'],
     icon: '🌱'
-  },
-  {
-    name: 'Node.js',
-    category: 'backend',
-    proficiency: 92,
-    projects: ['RINDA', 'Kiac Education Platform'],
-    icon: '🟢'
   },
   {
     name: 'Python',
@@ -157,21 +157,21 @@ export default function SkillsSection() {
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
 
   return (
-    <section id="skills" className="min-h-screen py-20 bg-primary-dark">
+    <section id="skills" className="min-h-screen py-12 md:py-20 bg-primary-dark">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl font-bold text-center mb-12"
+          className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12"
         >
           Arsenal of Technologies
         </motion.h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12">
           {/* Left Panel - Skill Constellation */}
-          <div className="relative h-[600px] bg-primary/20 rounded-lg p-8">
-            <div className="grid grid-cols-3 gap-6">
+          <div className="relative min-h-[400px] md:h-[600px] bg-primary/20 rounded-lg p-4 md:p-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
               {Object.entries(categoryLabels).map(([category, label]) => (
                 <motion.div
                   key={category}
@@ -184,8 +184,8 @@ export default function SkillsSection() {
                       scale: hoveredCategory === category ? 1.1 : 1,
                       opacity: hoveredCategory === null || hoveredCategory === category ? 1 : 0.3
                     }}
-                    className={`p-4 rounded-lg bg-gradient-to-br ${categoryColors[category as keyof typeof categoryColors]} 
-                      text-white font-semibold text-center cursor-pointer`}
+                    className={`p-3 md:p-4 rounded-lg bg-gradient-to-br ${categoryColors[category as keyof typeof categoryColors]} 
+                      text-white font-semibold text-sm md:text-base text-center cursor-pointer`}
                   >
                     {label}
                   </motion.div>
@@ -193,7 +193,7 @@ export default function SkillsSection() {
               ))}
             </div>
 
-            <div className="mt-8 grid grid-cols-4 gap-4">
+            <div className="mt-6 md:mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-4">
               {technologies.map((tech) => (
                 <motion.div
                   key={tech.name}
@@ -201,7 +201,7 @@ export default function SkillsSection() {
                   whileInView={{ scale: 1, opacity: 1 }}
                   whileHover={{ scale: 1.1, rotateY: 180 }}
                   onClick={() => setSelectedTech(tech)}
-                  className={`relative h-24 perspective-1000 ${
+                  className={`relative h-20 md:h-24 perspective-1000 ${
                     hoveredCategory && hoveredCategory !== tech.category ? 'opacity-30' : ''
                   }`}
                 >
@@ -213,7 +213,7 @@ export default function SkillsSection() {
                   >
                     <div className={`w-full h-full rounded-lg bg-gradient-to-br ${
                       categoryColors[tech.category]
-                    } flex items-center justify-center text-2xl`}>
+                    } flex items-center justify-center text-xl md:text-2xl`}>
                       {tech.icon}
                     </div>
                   </motion.div>
@@ -223,9 +223,9 @@ export default function SkillsSection() {
                       rotateY: selectedTech?.name === tech.name ? 0 : 180
                     }}
                   >
-                    <div className="w-full h-full rounded-lg bg-primary p-4">
-                      <h4 className="text-sm font-bold text-neutral-light">{tech.name}</h4>
-                      <div className="w-full h-1 bg-neutral-light/20 rounded-full mt-2">
+                    <div className="w-full h-full rounded-lg bg-primary p-2 md:p-4">
+                      <h4 className="text-xs md:text-sm font-bold text-neutral-light">{tech.name}</h4>
+                      <div className="w-full h-1 bg-neutral-light/20 rounded-full mt-1 md:mt-2">
                         <div
                           className="h-full bg-secondary rounded-full"
                           style={{ width: `${tech.proficiency}%` }}
@@ -239,19 +239,19 @@ export default function SkillsSection() {
           </div>
 
           {/* Right Panel - Technology Details */}
-          <div className="bg-primary/20 rounded-lg p-8">
+          <div className="bg-primary/20 rounded-lg p-4 md:p-8">
             {selectedTech ? (
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
-                className="space-y-6"
+                className="space-y-4 md:space-y-6"
               >
-                <div className="flex items-center gap-4">
-                  <span className="text-4xl">{selectedTech.icon}</span>
-                  <h3 className="text-2xl font-bold text-neutral-light">{selectedTech.name}</h3>
+                <div className="flex items-center gap-3 md:gap-4">
+                  <span className="text-3xl md:text-4xl">{selectedTech.icon}</span>
+                  <h3 className="text-xl md:text-2xl font-bold text-neutral-light">{selectedTech.name}</h3>
                 </div>
                 <div className="space-y-2">
-                  <h4 className="text-lg font-semibold text-neutral-light">Proficiency</h4>
+                  <h4 className="text-base md:text-lg font-semibold text-neutral-light">Proficiency</h4>
                   <div className="w-full h-2 bg-neutral-light/20 rounded-full">
                     <motion.div
                       initial={{ width: 0 }}
@@ -261,17 +261,17 @@ export default function SkillsSection() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h4 className="text-lg font-semibold text-neutral-light">Projects</h4>
+                  <h4 className="text-base md:text-lg font-semibold text-neutral-light">Projects</h4>
                   <ul className="list-disc list-inside space-y-1">
                     {selectedTech.projects.map((project, index) => (
-                      <li key={index} className="text-neutral-light/80">{project}</li>
+                      <li key={index} className="text-sm md:text-base text-neutral-light/80">{project}</li>
                     ))}
                   </ul>
                 </div>
               </motion.div>
             ) : (
               <div className="h-full flex items-center justify-center">
-                <p className="text-neutral-light/60 text-center">
+                <p className="text-sm md:text-base text-neutral-light/60 text-center">
                   Select a technology to view detailed information
                 </p>
               </div>
