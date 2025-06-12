@@ -1,0 +1,103 @@
+Anglebert Shumbusho Ishimwe
+Email: mailto:anglebertsh@gmail.com
+                  LinkedIn | Github 
+
+SUMMARY
+I am a backend-focused Full Stack Developer with a strong foundation in software engineering, specializing in designing and developing scalable and efficient web applications. My expertise spans both backend technologies such as  Laravel, Spring Boot, MySQL, Postgres and Node.js, alongside frontend technologies like React.js, NestJS, and Flutter for mobile development.
+I have a keen interest in building high-performance systems, particularly in financial systems, transaction management, and API integrations. This enables me to create secure, efficient solutions that ensure system integrity and scalability.
+I am passionate about problem-solving, system optimization, and delivering high-quality software solutions. Whether working independently or as part of a team, I thrive in dynamic environments that demand innovation and collaboration.
+
+EDUCATION
+Rwanda Coding Academy – Advanced High School Diploma - Nyabihu, Rwanda					January 2020 – August 2023 
+African Leadership University – Bachelor's in Software Engineering - Kigali, Rwanda				September 2024 – August 2027 
+
+SKILLS
+
+Javascript/Typescript: Node.js Prisma, Sequelize CLI, React.js, Redux, React Native, Jquery 
+Java: SpringBoot, Hibernate
+Version Control: Git, GitHub
+Python: Fast API, Flask
+PHP: Laravel, CakePHP, Code Igniter
+Critical thinking & Problem solving
+Microservices Architecture
+Team Leadership & Communication
+Test-driven development(TDD)
+Database: Mongodb,Mysql ,Postgres, Sqlite
+Mobile Development: Flutter, Dart
+
+
+WORK EXPERIENCE
+Back End Developer  – Softpi-Group – Kigali, Rwanda (Remote)				   		                                       Jan 2025 - present
+Soft Pi is a leading software development firm based in Rwanda. We specialize in delivering innovative and reliable software solutions to help businesses solve complex problems and achieve their goals
+Project: RINDA – Secure Device Management App
+Skills: Node.js, Express.js, MongoDB, REST API, Docker, JWT, Git,Kubernates
+Mobile App Lead Developer  – Inhills Technology Ltd – Kigali, Rwanda (Remote)				   		         Jan 2025 - present
+Developed secure backend infrastructure for RINDA, an app that allows users to register, manage, and protect their devices online.
+Implemented authentication, device tracking, and encrypted user data storage using Node.js and MongoDB.
+Ensured high availability and data security with containerized deployment (Docker) and role-based access control.
+Collaborated cross-functionally with design and mobile teams to maintain agile workflows and feature delivery.
+
+Inhills Technology is a company that develops innovative software solutions, including cloud-based systems and applications tailored to various industries.
+Skills: Flutter, Dart, API Integrations, Mobile Architecture
+Leading the development of the INJONGE POS mobile app, a cross-platform solution designed to enhance business accessibility and tax compliance.
+Utilizing Flutter to create a scalable, user-friendly mobile application that integrates seamlessly with RRA APIs.
+Developing core features such as inventory management, sales tracking, and financial reporting to support real-time, on-the-go business operations.
+Ensuring the mobile app aligns with the modular architecture of the web system, supporting additional functionalities like CRM, HRM, and project management.
+Maintaining compliance with RRA standards while delivering high-quality software solutions tailored to business needs.
+
+Fullstack Developer  – Inhills Technology Ltd – Kigali, Rwanda (Remote)				   		      	 	July 2024 - present
+Skills: Laravel - MySQL - jQuery - RRA APIs -Bootstrap
+Leading the development of INJONGE POS, a cloud-based point-of-sale system integrated with Rwanda Revenue Authority (RRA) APIs.
+Working extensively with Laravel, MySQL, and jQuery to build a scalable solution that helps businesses streamline their billing processes and ensure tax compliance.
+Spearheading the integration of inventory management, sales tracking, and financial reporting functionalities into the INJONGE POS system, delivering seamless operations for multi-location businesses.
+Collaborating with a cross-functional team to enhance the system's modular approach, incorporating additional features like CRM, HRM, and project management as per client requirements.
+Ensured the system complies with RRA standards and provides cloud-based real-time access to business operations.
+Technologies
+
+
+Software Engineer – COSEKE (R) Limited– Kigali, Rwanda 								                       Feb 2024 - August 2024
+COSEKE (R) Limited is a leading provider of banking and financial software solutions, focusing on enhancing operational efficiency and security in the financial sector.
+Skills:  Laravel - React.js - Spring Boot - MySQL - Flutterwave
+Contributed to backend development for large-scale projects, including core banking systems, document management, and e-commerce solutions.
+Utilized Laravel, Spring Boot, and MySQL to implement business logic and manage large datasets efficiently.
+Integrated third-party services such as payment gateways for secure online transactions.
+Developed and optimized APIs to ensure cross-platform compatibility and efficient data handling.
+
+Backend Developer – Kiac –   Kigali, Rwanda (Remote)							            	     	                       June 2022 – June 2023 
+Kiac is a dynamic tech company that creates innovative online solutions for educational institutions.
+Skills: Node.js - Express.js - MongoDB - MySQL - RESTful APIs
+Led the development of a comprehensive online education platform, handling front and backend responsibilities.
+Designed and implemented features for managing students, courses, teachers, and reports.
+Developed RESTful APIs and backend services using Node.js and Express.js, as well as frontend interfaces using React.js.
+Integrated authentication and authorization mechanisms to ensure secure access to platform resources.
+Implemented real-time communication features such as chat and notifications for improved user engagement.
+Utilized MongoDB and MySQL databases for data storage and retrieval, optimizing queries for performance.
+Collaborated closely with UI/UX designers to create intuitive and responsive user interfaces.
+
+
+PROJECTS & LEADERSHIP EXPERIENCE
+Agency Business Management System - Web developer                                                                                                                            March 2025 -  present
+Developed a comprehensive transaction management system, enabling agents to track, process, and manage financial transactions across multiple accounts and banks.
+Implemented a robust multi-source transaction tracking system, supporting deposits, withdrawals, and transfers with detailed transaction history and counterpart tracking.
+Built advanced financial modeling with dynamic account balance management and comprehensive transaction logging.
+Designed a scalable backend architecture using Laravel and MySQL, ensuring efficient handling of complex relational database interactions and transaction integrity.
+Technologies: Laravel, PHP, MySQL, RESTful API, Bootstrap
+Better Education NGO (Donation Platform)  - Web developer                                                                                                                      June 2024 -  Present
+Developed a custom donation platform to streamline donation processes and track real-time transactions.
+Implemented donation processing and secure payment handling using PHP and Flutterwave API.
+Designed responsive donation pages using HTML and CSS to provide a seamless user experience.
+Integrated backend systems to ensure scalability and performance as traffic increases during fundraising campaigns.
+Technologies: PHP, HTML, CSS, Flutterwave API, MySQL
+
+INTERESTS & HOBBIES
+
+Reading 
+TED Talks
+Music
+Football
+Psychology & Human Interaction
+Movies and Documentaries
+
+
+
+
