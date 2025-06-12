@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import ParticleSystem from '@/app/components/ui/particles/ParticleSystem';
 import GeometricShapes from '@/app/components/3d/geometric-shapes/GeometricShapes';
 
